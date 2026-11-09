@@ -1,0 +1,16 @@
+# dsh-plugin-file-manager bundle layer.
+#
+# Applied when this package is listed in a profile's `dsh.profile.bundles`:
+# `dsh plugin --profile web add <this package>` installs it and appends it to that
+# list automatically (a dependency resolving to a package that declares
+# `dsh.bundle` joins the layer stack).
+#
+# Do NOT add the same insert row to the profile's own cordis.patch.yml as well:
+# the row would be inserted twice and the Loader rejects the duplicate id.
+- insert:
+    - id: file-manager
+      name: 'dsh-plugin-file-manager'
+      # config:
+      #   root: 'C:\path\to\fallback-folder'  # only a fallback: a session's cwd wins
+      #   maxEntries: 1500
+      #   maxReadBytes: 524288
