@@ -10,6 +10,8 @@
 
 英文版见 [README.md](README.md)。
 
+![文件管理面板停靠在 dsh Web 界面右侧](docs/screenshot.png)
+
 ## 功能
 
 | | |

@@ -12,6 +12,8 @@ and hands files to your operating system's default application.
   panel previews its text. Directories are entered on click.
 - **Zero build step.** The browser half is a hand-written lazy-CJS bundle; edit it and refresh.
 
+![The file manager panel docked to the right edge of the dsh web UI](docs/screenshot.png)
+
 ## Features
 
 | | |

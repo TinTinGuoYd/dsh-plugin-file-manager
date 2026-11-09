@@ -17,6 +17,7 @@
 - Ships a `dsh.bundle` layer, so `dsh plugin add` wires the profile row automatically.
 - Adds `scripts/verify.mjs` (`npm run check`): manifest, bundle layer and client-bundle contract
   checks plus syntax parsing, dependency-free; CI runs it on every push and pull request.
+- Adds a screenshot (`docs/screenshot.png`) to both READMEs.
 
 ## 0.1.0
 
