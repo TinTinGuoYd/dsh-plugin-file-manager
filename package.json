@@ -12,6 +12,14 @@
     "workspace"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinTinGuoYd/dsh-plugin-file-manager.git"
+  },
+  "homepage": "https://github.com/TinTinGuoYd/dsh-plugin-file-manager#readme",
+  "bugs": {
+    "url": "https://github.com/TinTinGuoYd/dsh-plugin-file-manager/issues"
+  },
   "type": "module",
   "engines": {
     "node": ">=22"
