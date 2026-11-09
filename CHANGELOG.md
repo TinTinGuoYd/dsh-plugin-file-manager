@@ -15,6 +15,8 @@
 - Added a footer action that opens the current directory in the system file manager.
 - The sidebar footer trigger is gone: the dock is always visible.
 - Ships a `dsh.bundle` layer, so `dsh plugin add` wires the profile row automatically.
+- Adds `scripts/verify.mjs` (`npm run check`): manifest, bundle layer and client-bundle contract
+  checks plus syntax parsing, dependency-free; CI runs it on every push and pull request.
 
 ## 0.1.0
 

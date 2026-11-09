@@ -123,10 +123,12 @@ dsh plugin --profile web add ./dsh-plugin-file-manager # 从 checkout 或 tarbal
 没有构建步骤。改完 `lib/client.js` 或 `lib/index.js` 后：
 
 ```sh
-npm run check   # 对两半执行 node --check
+npm run check   # 校验清单、bundle 层、客户端契约与语法，零依赖
 ```
 
 然后刷新浏览器标签页。宿主半边改动需要重启 `dsh`（ESM 不做热替换），客户端改动只需刷新页面。
+
+`scripts/verify.mjs` 就是 `npm run check` 的执行体，`.github/workflows/check.yml` 在每次 push 和 PR 上跑同一条命令。
 
 ## 已知限制
 

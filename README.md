@@ -138,11 +138,14 @@ This is a **dual-face** package: one profile row mounts both halves.
 There is no build step. Edit `lib/client.js` or `lib/index.js`, then:
 
 ```sh
-npm run check   # node --check on both halves
+npm run check   # manifest + bundle layer + client bundle contract + syntax, no dependencies
 ```
 
 and refresh the browser tab. With `~/.dsh/profiles/web/cordis.patch.yml` as the layer, host edits
 need a `dsh` restart (module ESM is not hot-swapped); client edits only need a page refresh.
+
+`scripts/verify.mjs` is what `npm run check` runs, and `.github/workflows/check.yml` runs the same
+command on every push and pull request.
 
 ## Limitations
 
